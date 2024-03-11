@@ -92,7 +92,7 @@ class MemberServiceTest {
             assertThatThrownBy(() -> {
                 memberService.login("u", "p");
             }).isInstanceOf(UnAuthorizedException.class)
-                    .hasMessage("존재하지 않는 아이디입니다.");
+                    .hasMessage("존재하지 않는 아이디입니다");
         }
 
         @Test
@@ -148,7 +148,7 @@ class MemberServiceTest {
             assertThatThrownBy(() -> {
                 memberService.findById(100L);
             }).isInstanceOf(NotFoundException.class)
-                    .hasMessage("회원 정보가 없습니다.");
+                    .hasMessage("회원 정보가 없습니다");
         }
     }
 }

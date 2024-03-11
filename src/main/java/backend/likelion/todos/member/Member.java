@@ -28,6 +28,6 @@ public class Member {
         if (this.password.equals(password)) {
             return;
         }
-        throw new UnAuthorizedException("비밀번호가 일치하지 않습니다.");
+        throw new UnAuthorizedException("비밀번호가 일치하지 않습니다");
     }
 }
